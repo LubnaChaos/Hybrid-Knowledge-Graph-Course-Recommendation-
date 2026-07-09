@@ -1,3 +1,23 @@
+# Hybrid Knowledge Graph Course Recommendation
+ 
+Built as a portfolio project for **192.194 Knowledge Graphs — TU Wien (2026S)**.
+ 
+---
+ 
+## Problem
+ 
+Online learning platforms offer thousands of courses but their recommendation systems rely on simple co-enrollment statistics — "students who took A also took B." This misses the actual semantic structure: a Python course is related to a Data Analysis course because Python *teaches skills* that Data Analysis *requires*. Traditional systems cannot capture this.
+ 
+## Solution
+ 
+I built a **Knowledge Graph** that makes these relationships explicit — connecting students, courses, skills and categories as a network of 22,000 structured facts. I then applied two complementary ML techniques:
+ 
+- **TransE** (PyKEEN) — converts every entity into a vector so that `student + enrolled_in ≈ course`, enabling link prediction for course recommendations
+- **GCN** (PyTorch Geometric) — uses the graph structure itself to refine representations, initialised with TransE embeddings as node features (the *hybrid* part)
+Together they produce ranked course recommendations that reflect the actual knowledge structure — not just surface-level patterns.
+ 
+---
+ 
 ## Results
  
 | Model | Metric | Value |
@@ -22,3 +42,5 @@ PyKEEN · PyTorch Geometric · pandas · scikit-learn · matplotlib
 ---
  
 **Mahmuda Akter Lubna** — MSc Software Engineering, TU Wien  
+[LinkedIn](https://linkedin.com/in/mahmuda-akter-lubna) · [GitHub](https://github.com/LubnaChaos)
+ 
