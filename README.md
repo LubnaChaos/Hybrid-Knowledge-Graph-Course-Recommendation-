@@ -1,9 +1,5 @@
 # Hybrid Knowledge Graph Course Recommendation
  
-Built as a portfolio project for **192.194 Knowledge Graphs — TU Wien (2026S)**.
- 
----
- 
 ## Problem
  
 Online learning platforms offer thousands of courses but their recommendation systems rely on simple co-enrollment statistics — "students who took A also took B." This misses the actual semantic structure: a Python course is related to a Data Analysis course because Python *teaches skills* that Data Analysis *requires*. Traditional systems cannot capture this.
@@ -40,7 +36,5 @@ PyKEEN · PyTorch Geometric · pandas · scikit-learn · matplotlib
 ![GCN PCA](gcn_embeddings_pca.png)
  
 ---
- 
-**Mahmuda Akter Lubna** — MSc Software Engineering, TU Wien  
-[LinkedIn](https://linkedin.com/in/mahmuda-akter-lubna) · [GitHub](https://github.com/LubnaChaos)
+
  
